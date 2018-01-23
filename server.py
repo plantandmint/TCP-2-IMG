@@ -16,7 +16,7 @@ print 'Connection address:', addr
 while 1:
     data = conn.recv(BUFFER_SIZE)
     if not data: break
-    myfile = open("result.jpg", 'wb')
+    myfile = open("ImageFromClient/result.jpg", 'wb')
     myfile.write(data)
     myfile.close()
 conn.close()
